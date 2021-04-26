@@ -20,17 +20,17 @@ Earlier we processed expressions written in infix notation. This notation is not
 ```
 3 + 2 * 4
 ```
-Postfix notation 1:
+**Postfix notation 1:**
 
 ```
 3 2 4 * +
 ```
-Infix notation 2:
+**Infix notation 2:**
 
 ```
 2 * (3 + 4) + 1
 ```
-Postfix notation 2:
+**Postfix notation 2:**
 
 ```
 2 3 4 + * 1 +
@@ -58,7 +58,7 @@ If the incoming element is a number, push it into the stack (the whole number, n
 If the incoming element is the name of a variable, push its value into the stack.
 If the incoming element is an operator, then pop twice to get two numbers and perform the operation; push the result on the stack.
 When the expression ends, the number on the top of the stack is a final result.
-Here you can find (an example and additional explanations on postfix expressions)[http://www.cs.nthu.edu.tw/~wkhon/ds/ds10/tutorial/tutorial2.pdf].
+Here you can find [an example and additional explanations on postfix expressions](http://www.cs.nthu.edu.tw/~wkhon/ds/ds10/tutorial/tutorial2.pdf).
 
 # Objectives
 * Your program should support multiplication *, integer division / and parentheses (...). To do this, use infix to postfix conversion algorithm above and then calculate the result using stack.
